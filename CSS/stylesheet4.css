@@ -1,0 +1,108 @@
+/* Body */
+body {
+    background-color: black;
+    color: #7cfc00;
+    /* hijau neon */
+    font-family: "Courier New", monospace;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container pakai grid */
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "menu sidebar"
+        "content content"
+        "footer footer";
+    grid-template-columns: 1fr 390px;
+    /* menu di kiri, sidebar di kanan */
+    gap: 5px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    grid-area: header;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.header p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Menu */
+.menu {
+    grid-area: menu;
+}
+
+.menu ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu ul li a {
+    color: #7cfc00;
+    text-decoration: none;
+}
+
+/* Sidebar */
+.sidebar {
+    grid-area: sidebar;
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 0.9em;
+    color: white;
+}
+
+.sidebar h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Content */
+.content {
+    grid-area: content;
+}
+
+.content h2 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: #7cfc00;
+    font-size: 30px;
+}
+
+.content p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.content a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    grid-area: footer;
+    border: 1px solid white;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.9em;
+    text-align: center;
+    color: white;
+}

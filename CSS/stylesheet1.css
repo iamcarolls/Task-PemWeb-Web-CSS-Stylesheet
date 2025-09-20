@@ -1,0 +1,80 @@
+/* container */
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "menu content sidebar"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    /* 3 kolom: menu, konten, sidebar */
+    gap: 10px;
+    padding: 10px;
+    font-family: serif;
+}
+
+/* header */
+.header {
+    grid-area: header;
+    background-color: #9A3F3F;
+    color: white;
+    text-align: left;
+    line-height: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* Menu */
+.menu {
+    grid-area: menu;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 8px;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px;
+    border: 1px solid;
+    text-decoration: none;
+    background: white;
+    border-radius: 3px;
+    color: black;
+}
+
+/* Konten */
+.content {
+    grid-area: content;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Sidebar */
+.sidebar {
+    grid-area: sidebar;
+    background-color: #C1856D;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 20px;
+}
+
+/* Footer */
+.footer {
+    grid-area: footer;
+    background-color: rgb(209, 208, 208);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    line-height: 20px;
+}
